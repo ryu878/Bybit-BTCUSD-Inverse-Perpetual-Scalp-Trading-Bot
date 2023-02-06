@@ -1,4 +1,4 @@
-# Bybit BTCUSD Inverse Pepretual Scalp Trading Bot
+# Bybit BTCUSD Inverse Perpetual Scalp Trading Bot
 # ------------------------------------------------
 # (C) 2022 Ryan Hayabusa, AAD Research
 # Github: https://github.com/ryu878 
@@ -21,7 +21,7 @@ from pybit import inverse_perpetual
 
 
 
-title = 'Ryuryu\'s Bybit BTCUSD Inverse Pepretual Scalp Trading Bot'
+title = 'Ryuryu\'s Bybit BTCUSD Inverse Perpetual Scalp Trading Bot'
 ver = 'v5.0'
 
 
