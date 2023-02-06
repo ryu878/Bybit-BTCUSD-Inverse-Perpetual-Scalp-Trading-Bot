@@ -15,6 +15,7 @@ Bot logic: bot collects trades from Bybit websocket and calculates high, low and
 ## Requirements
 
 Install libraries:
+Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virtual env and activate it.  
   
 <code>pip install pybit</code>
 
@@ -23,13 +24,13 @@ Install libraries:
 
 
 ## How to run
-1. Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virtual env and activate it.
-2. Rename config-sample.py to config.py, open it and add your API key credentials. Save it.
-3. Run
+
+1. Rename config-sample.py to config.py, open it and add your API key credentials. Save it.
+2. Run
 <code>docker-compose up -d</code> to download and run Redis server for you. Don't forget to limit access to port 8001 on your server.
-4. Run
+3. Run
 <code>python3 ws_trades_inverse_redis.py</code> to run the script that will collect the data using Bybit websockets and save it to the Redis database.
-5. Run
+4. Run
 <code>python3 inverse_bot_v5.0.py</code>
 
 
