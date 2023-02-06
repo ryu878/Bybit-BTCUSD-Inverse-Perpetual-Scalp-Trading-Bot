@@ -24,6 +24,7 @@ Install libraries:
 
 
 ## How to run
+0. Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virtual env and activate it.
 1. Rename config-sample.py to config.py, open it and add your API key credentials. Save it.
 2. Run
 <code>docker-compose up -d</code>
