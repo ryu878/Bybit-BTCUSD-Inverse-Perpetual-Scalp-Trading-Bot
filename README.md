@@ -27,9 +27,9 @@ Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virt
 
 1. Rename config-sample.py to config.py, open it and add your API key credentials. Save it.
 2. Run
-<code>docker-compose up -d</code> to download and run Redis server for you. Don't forget to limit access to port 8001 on your server.
+<code>docker-compose up -d</code> to download and run Redis server for you. Don't forget to limit access to port 8001 on your server. If you don't have docker-compose just run <code>docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest</code> to run Redis.
 3. Run
-<code>python3 ws_trades_inverse_redis.py</code> to run the script that will collect the data using Bybit websockets and save it to the Redis database.
+<code>python3 ws_trades_inverse_redis.py</code> to run the script that will collect the data using Bybit websockets and save it to the Redis database. 
 4. Run
 <code>python3 inverse_bot_v5.0.py</code>
 
