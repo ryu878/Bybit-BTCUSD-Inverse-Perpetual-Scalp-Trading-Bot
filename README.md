@@ -13,7 +13,6 @@ Bot logic: bot collects trades from Bybit websocket and calculates high, low and
   
 
 ## Requirements
-You need bybit and binance accounts and APIs.
 
 Install libraries:
   
