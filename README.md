@@ -3,7 +3,7 @@
 [![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://aadresearch.xyz)
 
 
-Trading bot for Bybit exchange to trade BTCUSD perpetual contract. It use Redis database to cashe the trades data.
+Trading bot for Bybit exchange to trade BTCUSD perpetual contract. It use Redis database to cache the trades data.
 
 That bot will only open shorts, because there are no liquidation price for 1x short on inverse contract and because in most cases funding rates for shorts are positive. If you want to make the bot trade longs you can just copy-paste the logic.
 
