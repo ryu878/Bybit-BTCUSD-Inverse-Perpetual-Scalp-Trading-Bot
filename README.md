@@ -6,7 +6,7 @@
 Trading bot for Bybit exchange to trade BTCUSD perpetual contract. It use Redis database to cashe the trades data.
 That bot will only open shorts, because there are no liquidation price for 1x short on inverse contract and because in most cases funding rates for shorts are positive. If you want to make the bot trade longs you can just copy-paste the logic.
 
-![image](https://user-images.githubusercontent.com/81808867/198848493-ef94a711-b3e0-4789-bbc2-ce3e11236c63.png)
+![image](https://user-images.githubusercontent.com/81808867/217010448-9f05188e-284c-4307-ac92-a2627f39dbc5.png)
 
 ## Requirements
 You need bybit and binance accounts and APIs.
