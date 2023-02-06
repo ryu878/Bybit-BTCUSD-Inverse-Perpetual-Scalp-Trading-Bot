@@ -15,6 +15,7 @@ Bot logic: bot collects trades from Bybit websocket and calculates high, low and
 ## Requirements
 
 Install libraries:
+  
 Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virtual env and activate it.  
   
 <code>pip install pybit</code>
