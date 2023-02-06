@@ -27,10 +27,10 @@ Install libraries:
 1. Rename config-sample.py to config.py, open it and add your API key credentials. Save it.
 2. Run
 <code>docker-compose up -d</code>
-It will download and run Redis server for you. Don't forget to limit access to port 8001 on your server.
+- it will download and run Redis server for you. Don't forget to limit access to port 8001 on your server.
 3. Run
 <code>python3 ws_trades_inverse_redis.py</code>
-It will run script that will collect the data using Bybit websockets and save it to the Redis database.
+- it will run script that will collect the data using Bybit websockets and save it to the Redis database.
 4. Run
 <code>python3 inverse_bot_v5.0.py</code>
 
