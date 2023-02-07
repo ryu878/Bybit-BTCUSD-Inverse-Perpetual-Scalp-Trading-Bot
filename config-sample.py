@@ -9,6 +9,7 @@ symbol = 'BTCUSD'                     # asset to trade. Never tested on another 
 csize = 1                             # lot size
 min_fee = 0.17                        # min distance to take profit
 divider = 7                           # deleverage divider
+timeout = 3                           # pause in seconds between loops
 
 # Database settings
 # redis_host = '192.168.1.4'
