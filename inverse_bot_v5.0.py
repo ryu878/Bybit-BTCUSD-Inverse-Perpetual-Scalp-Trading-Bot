@@ -14,7 +14,9 @@
 # sudo fuser -k 6379/tcp
 
 import time
+import math
 import redis
+import decimal
 from config import *
 from inspect import currentframe
 from pybit import inverse_perpetual
@@ -41,6 +43,10 @@ def get_linenumber():
     cf = currentframe()
     global line_number
     line_number = cf.f_back.f_lineno
+
+
+def find_decimals(value):
+    return (abs(decimal.Decimal(str(value)).as_tuple().exponent))
 
 
 def query_symbols():
@@ -85,12 +91,13 @@ def get_sell_position():
 
 try:
     query_symbols()
-    
+
 except Exception as e:
     get_linenumber()
     print(line_number, 'exeception: {}'.format(e))
     pass
 print(symbol,price_scale,tick_size,min_price,min_trading_qty,qty_step)
+decimal_for_tp_size  = find_decimals(min_trading_qty)
 
 time.sleep(0.01)
 
@@ -274,12 +281,20 @@ while True:
     # Define Deleverage Lot Size
     if sell_position_size / divider < min_trading_qty:
         lot_size_market_tp = sell_position_size
+        print(' Market TP size (1):',lot_size_market_tp)
     
     if sell_position_size / divider < min_trading_qty * divider:
         lot_size_market_tp = sell_position_size
+        print(' Market TP size (2):',lot_size_market_tp)
+    
+    else:
+        lot_size_market_tp = round((sell_position_size / divider),decimal_for_tp_size)
+        print(' Market TP size (3):',lot_size_market_tp)
 
 
     tp_price = float((100 - min_fee) * sell_position_prce / 100)
+    tp_price = math.ceil(tp_price * 2) / 2  # 0.5 step
+
 
     print(' TP Price:',tp_price)
     
@@ -301,4 +316,4 @@ while True:
         print(' No Time for Take Profit Yet')
 
 
-    time.sleep(3)
+    time.sleep(timeout)
