@@ -18,7 +18,7 @@ Install libraries:
   
 Run <code>python3 -m venv .bot && source .bot/bin/activate</code> to create virtual env and activate it.  
   
-<code>pip install pybit</code>
+<code>pip install pybit==2.4.1</code>
 
 <code>pip install redis</code>
 
