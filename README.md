@@ -41,6 +41,10 @@ This project is for informational and educational purposes only. You should not 
 
 
 ## Contacts
+I develop trading robots, dashboards and indicators for any crypto exchanges. Any indicators, logic, bots of any complexity.
+
+To contact me:
+  
 Discord: https://discord.gg/zSw58e9Uvf
 
 Telegram: https://t.me/aadresearch
