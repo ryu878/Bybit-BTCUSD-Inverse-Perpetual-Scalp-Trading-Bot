@@ -10,8 +10,9 @@ Also I sent email to them regargind my ref id P11NJW. But there is no answer as 
 
 So then let it be CLEAR, that since 
 * Bybit violate their own rules
-* scam users
+* Bybit scam users
 * I'll not receive a Referral commission anymore
+* They don't reply and there is no support
 
 this project is closed and there will be no more updates. I'll move all my code to Binance, OKX etc soon.
 
