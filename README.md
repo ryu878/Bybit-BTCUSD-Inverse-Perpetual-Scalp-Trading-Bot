@@ -1,5 +1,6 @@
 ⛔    BYBIT Exchange Affiliate Program SCAM ALERT ⛔ 
 
+
 I have received a letter from Bybit Exchange:
 
 * "After a thorough internal investigation conducted by our risk team, your account was being flagged out from receiving Referral commissions due to a violation of our Terms of Service and Bonus...                                                            Let it be clear that this decision is final and we will not accommodate any further appeals regarding the matter."   
